@@ -1,0 +1,901 @@
+{
+  "file": "C:\\Users\\rafat\\AppData\\Local\\Temp\\analytics.js",
+  "totalLength": 11170794,
+  "findings": {
+    "/\\/(?:api|API)\\/[-A-Za-z0-9_/.]*/g": [
+      {
+        "match": "/api/timeline/",
+        "index": 405998,
+        "context": "Timeline](https://mui.com/material-ui/react-timeline/)\\n *\\n * API:\\n *\\n * - [Timeline API](https://mui.com/material-ui/api/timeline/)\\n */\\nconst Timeline = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Timeline(inPr"
+      },
+      {
+        "match": "/api/timeline/",
+        "index": 409115,
+        "context": " Demos:\\n *\\n * - [Timeline](https://mui.com/components/timeline/)\\n *\\n * API:\\n *\\n * - [Timeline API](https://mui.com/api/timeline/)\\n */\\n/* harmony default export */ __webpack_exports__[\\\"default\\\"] = (Timeline);//# sourceURL=[module]\\"
+      },
+      {
+        "match": "/api/chip/",
+        "index": 836141,
+        "context": "]), (prop_types__WEBPACK_IMPORTED_MODULE_23___default().bool)]),\\n  /**\\n   * Props applied to the [`Chip`](/material-ui/api/chip/) element.\\n   */\\n  ChipProps: (prop_types__WEBPACK_IMPORTED_MODULE_23___default().object),\\n  /**\\n   * Over"
+      },
+      {
+        "match": "/api/typography/",
+        "index": 1238426,
+        "context": "WEBPACK_IMPORTED_MODULE_14___default().object)]),\\n  /**\\n   * `classes` prop applied to the [`Typography`](/material-ui/api/typography/) element.\\n   */\\n  TypographyClasses: (prop_types__WEBPACK_IMPORTED_MODULE_14___default().object),\\n  "
+      },
+      {
+        "match": "/api/fab/",
+        "index": 1586978,
+        "context": "lay: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().number),\\n  /**\\n   * Props applied to the [`Fab`](/material-ui/api/fab/) component.\\n   * @default {}\\n   */\\n  FabProps: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object),"
+      },
+      {
+        "match": "/api/tooltip/",
+        "index": 1588250,
+        "context": "s__WEBPACK_IMPORTED_MODULE_13___default().object)]),\\n  /**\\n   * `classes` prop applied to the [`Tooltip`](/material-ui/api/tooltip/) element.\\n   */\\n  TooltipClasses: (prop_types__WEBPACK_IMPORTED_MODULE_13___default().object),\\n  /**\\n "
+      },
+      {
+        "match": "/api/fab/",
+        "index": 1650418,
+        "context": "TED_MODULE_17___default().oneOf(['down', 'left', 'right', 'up']),\\n  /**\\n   * Props applied to the [`Fab`](/material-ui/api/fab/) element.\\n   * @default {}\\n   */\\n  FabProps: (prop_types__WEBPACK_IMPORTED_MODULE_17___default().object),\\n"
+      },
+      {
+        "match": "/API/FileSystemHandle",
+        "index": 2199256,
+        "context": "he paths will be kept as a {path} property.\\n *\\n * EXPERIMENTAL: A list of https://developer.mozilla.org/en-US/docs/Web/API/FileSystemHandle objects can also be passed as an arg\\n * and a list of File objects will be returned.\\n *\\n * @par"
+      },
+      {
+        "match": "/API/FileSystemFileHandle",
+        "index": 2200652,
+        "context": "ED_MODULE_0__.toFileWithPath)(file); });\\n}\\n// Ee expect each handle to be https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileHandle\\nfunction getFsHandleFiles(handles) {\\n    return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__awai"
+      },
+      {
+        "match": "/API/FileList",
+        "index": 2202935,
+        "context": "eb/JavaScript/Reference/Global_Objects/Array/from#Browser_compatibility\\n// https://developer.mozilla.org/en-US/docs/Web/API/FileList\\n// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItemList\\nfunction fromList(items) {\\n   "
+      },
+      {
+        "match": "/API/DataTransferItemList",
+        "index": 2202997,
+        "context": "atibility\\n// https://developer.mozilla.org/en-US/docs/Web/API/FileList\\n// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItemList\\nfunction fromList(items) {\\n    if (items === null) {\\n        return [];\\n    }\\n    var fil"
+      },
+      {
+        "match": "/API/DataTransferItem",
+        "index": 2203344,
+        "context": "ile = items[i];\\n        files.push(file);\\n    }\\n    return files;\\n}\\n// https://developer.mozilla.org/en-US/docs/Web/API/DataTransferItem\\nfunction toFilePromises(item) {\\n    if (typeof item.webkitGetAsEntry !== 'function') {\\n        "
+      },
+      {
+        "match": "/API/FileSystemEntry",
+        "index": 2204587,
+        "context": "_MODULE_0__.toFileWithPath)(file);\\n    return Promise.resolve(fwp);\\n}\\n// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemEntry\\nfunction fromEntry(entry) {\\n    return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__awaiter)(this, voi"
+      },
+      {
+        "match": "/API/FileSystemDirectoryEntry",
+        "index": 2204996,
+        "context": "? fromDirEntry(entry) : fromFileEntry(entry)];\\n        });\\n    });\\n}\\n// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry\\nfunction fromDirEntry(entry) {\\n    var reader = entry.createReader();\\n    return new Pr"
+      },
+      {
+        "match": "/API/FileSystemDirectoryEntry/createReader",
+        "index": 2205303,
+        "context": "    function readEntries() {\\n            var _this = this;\\n            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader\\n            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDi"
+      },
+      {
+        "match": "/API/FileSystemDirectoryReader/readEntries",
+        "index": 2205406,
+        "context": "rg/en-US/docs/Web/API/FileSystemDirectoryEntry/createReader\\n            // https://developer.mozilla.org/en-US/docs/Web/API/FileSystemDirectoryReader/readEntries\\n            reader.readEntries(function (batch) { return (0,tslib__WEBPACK_I"
+      },
+      {
+        "match": "/API/FileSystemFileEntry",
+        "index": 2207072,
+        "context": "t(err);\\n            });\\n        }\\n        readEntries();\\n    });\\n}\\n// https://developer.mozilla.org/en-US/docs/Web/API/FileSystemFileEntry\\nfunction fromFileEntry(entry) {\\n    return (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__awaiter)(t"
+      },
+      {
+        "match": "/API/HTMLInputElement/webkitdirectory",
+        "index": 2225598,
+        "context": "  // the File will have a {webkitRelativePath} property\\n                // https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/webkitdirectory\\n                : typeof webkitRelativePath === 'string' && webkitRelativePath.le"
+      },
+      {
+        "match": "/API/window/showOpenFilePicker",
+        "index": 7564922,
+        "context": "2___default().func),\\n\\n  /**\\n   * Set accepted file types.\\n   * Checkout https://developer.mozilla.org/en-US/docs/Web/API/window/showOpenFilePicker types option for more information.\\n   * Keep in mind that mime type determination is not"
+      },
+      {
+        "match": "/API/File_System_Access_API",
+        "index": 7567747,
+        "context": "_IMPORTED_MODULE_2___default().func),\\n\\n  /**\\n   * Set to true to use the https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API\\n   * to open the file picker instead of using an `<input type=\\\"file\\\">` click event.\\n   *"
+      },
+      {
+        "match": "/API/File",
+        "index": 7569646,
+        "context": "ected` props.\\n   *\\n   * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.\\n   * For example, with [SuperAgent](https://github."
+      },
+      {
+        "match": "/API/window/showOpenFilePicker",
+        "index": 7575036,
+        "context": "./utils\\\").AcceptProp} [props.accept] Set accepted file types.\\n * Checkout https://developer.mozilla.org/en-US/docs/Web/API/window/showOpenFilePicker types option for more information.\\n * Keep in mind that mime type determination is not r"
+      },
+      {
+        "match": "/API/File_System_Access_API",
+        "index": 7576650,
+        "context": "election\\n * @param {boolean} [props.useFsAccessApi] Set to true to use the https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API\\n * to open the file picker instead of using an `<input type=\\\"file\\\">` click event.\\n * @pa"
+      },
+      {
+        "match": "/API/File",
+        "index": 7578246,
+        "context": "pRejected` props.\\n *\\n * `onDrop` will provide you with an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects which you can then process and send to a server.\\n * For example, with [SuperAgent](https://github.co"
+      },
+      {
+        "match": "/API/window/showOpenFilePicker",
+        "index": 7590999,
+        "context": "({\\n        type: \\\"openDialog\\\"\\n      });\\n      onFileDialogOpenCb(); // https://developer.mozilla.org/en-US/docs/Web/API/window/showOpenFilePicker\\n\\n      var opts = {\\n        multiple: multiple,\\n        types: pickerTypes\\n      };\\"
+      },
+      {
+        "match": "/API/File_System_Access_API",
+        "index": 7592078,
+        "context": " {\\n            onErrCb(new Error(\\\"Cannot open the file picker because the https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API is not supported and no <input> was provided.\\\"));\\n          }\\n        } else {\\n         "
+      },
+      {
+        "match": "/API/DataTransfer/types",
+        "index": 7672375,
+        "context": "dataTransfer) {\\n    return !!event.target && !!event.target.files;\\n  } // https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/types\\n  // https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Recommended_drag_t"
+      },
+      {
+        "match": "/API/HTML_Drag_and_Drop_API/Recommended_drag_types",
+        "index": 7672449,
+        "context": "/ https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/types\\n  // https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API/Recommended_drag_types#file\\n\\n\\n  return Array.prototype.some.call(event.dataTransfer.types"
+      },
+      {
+        "match": "/API/File_System_Access_API",
+        "index": 7674434,
+        "context": "}\\n/**\\n * canUseFileSystemAccessAPI checks if the [File System Access API](https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API)\\n * is supported by the browser.\\n * @returns {boolean}\\n */\\n\\nfunction canUseFileSystemAc"
+      },
+      {
+        "match": "/API/window/showOpenFilePicker",
+        "index": 7674735,
+        "context": "**\\n * Convert the `{accept}` dropzone prop to the\\n * `{types}` option for https://developer.mozilla.org/en-US/docs/Web/API/window/showOpenFilePicker\\n *\\n * @param {AcceptProp} accept\\n * @returns {{accept: string[]}[]}\\n */\\n\\nfunction p"
+      },
+      {
+        "match": "/API/DOMException.",
+        "index": 7676915,
+        "context": "caused by aborting a request (e.g window.showOpenFilePicker()).\\n *\\n * See https://developer.mozilla.org/en-US/docs/Web/API/DOMException.\\n * @param {any} v\\n * @returns {boolean} True if v is an abort exception.\\n */\\n\\nfunction isAbort(v"
+      },
+      {
+        "match": "/API/DOMException.",
+        "index": 7677233,
+        "context": "e === v.ABORT_ERR);\\n}\\n/**\\n * Check if v is a security error.\\n *\\n * See https://developer.mozilla.org/en-US/docs/Web/API/DOMException.\\n * @param {any} v\\n * @returns {boolean} True if v is a security error.\\n */\\n\\nfunction isSecurityE"
+      }
+    ],
+    "/signIn|signin|login|sign_out|signOut|session|nextauth|csrf|csrfToken/gi": [
+      {
+        "match": "login",
+        "index": 4695189,
+        "context": "e__(/*! ../components/loading-screen */ \\\"./src/components/loading-screen/index.js\\\");\\n/* harmony import */ var _pages_login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/login */ \\\"./src/pages/login.js\\\");\\n/* harmony im"
+      },
+      {
+        "match": "login",
+        "index": 4695259,
+        "context": "een/index.js\\\");\\n/* harmony import */ var _pages_login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/login */ \\\"./src/pages/login.js\\\");\\n/* harmony import */ var _useAuthContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_r"
+      },
+      {
+        "match": "login",
+        "index": 4695282,
+        "context": "rmony import */ var _pages_login__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/login */ \\\"./src/pages/login.js\\\");\\n/* harmony import */ var _useAuthContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./useAuthC"
+      },
+      {
+        "match": "login",
+        "index": 4697089,
+        "context": "athname);\\n        }\\n        return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_pages_login__WEBPACK_IMPORTED_MODULE_4__[\\\"default\\\"], {}, void 0, false, {\\n            fileName: \\\"C:\\\\\\\\development\\\\\\\\Huda"
+      },
+      {
+        "match": "login",
+        "index": 5966515,
+        "context": "c ()=>{\\n        try {\\n            logout();\\n            replace(_routes_paths__WEBPACK_IMPORTED_MODULE_3__.PATH_AUTH.login);\\n            handleClosePopover();\\n        } catch (error) {\\n            console.error(error);\\n            en"
+      },
+      {
+        "match": "session",
+        "index": 6019670,
+        "context": "y {\\n            localStorage.removeItem(\\\"accessToken\\\");\\n            localStorage.removeItem(\\\"user\\\");\\n            sessionStorage.removeItem(\\\"accessToken\\\");\\n            sessionStorage.removeItem(\\\"user\\\");\\n            logout();\\n  "
+      },
+      {
+        "match": "session",
+        "index": 6019727,
+        "context": ";\\n            localStorage.removeItem(\\\"user\\\");\\n            sessionStorage.removeItem(\\\"accessToken\\\");\\n            sessionStorage.removeItem(\\\"user\\\");\\n            logout();\\n            replace(src_routes_paths__WEBPACK_IMPORTED_MODU"
+      },
+      {
+        "match": "login",
+        "index": 6019865,
+        "context": "oveItem(\\\"user\\\");\\n            logout();\\n            replace(src_routes_paths__WEBPACK_IMPORTED_MODULE_16__.PATH_AUTH.login);\\n        } catch (error) {\\n            console.error(error);\\n            enqueueSnackbar(\\\"Unable to logout!\\\""
+      },
+      {
+        "match": "session",
+        "index": 6119663,
+        "context": "RTED_MODULE_11__.PATH_DASHBOARD.subjects.view(id));\\n        } else if (path.includes(\\\"المحاضرة:\\\") || path.includes(\\\"session:\\\")) {\\n            const id = path.split(\\\":\\\")[1];\\n            push(_routes_paths__WEBPACK_IMPORTED_MODULE_11"
+      },
+      {
+        "match": "session",
+        "index": 6119801,
+        "context": "          const id = path.split(\\\":\\\")[1];\\n            push(_routes_paths__WEBPACK_IMPORTED_MODULE_11__.PATH_DASHBOARD.sessions.view(id));\\n        } else if (path.includes(\\\"المقابلة:\\\") || path.includes(\\\"interview:\\\")) {\\n            co"
+      },
+      {
+        "match": "session",
+        "index": 6268412,
+        "context": "  classMosque: iconify(\\\"icon-park-outline:circles-seven\\\"),\\n    subjects: iconify(\\\"material-symbols:subject\\\"),\\n    sessions: iconify(\\\"mdi:human-male-board\\\"),\\n    analytics: iconify(\\\"material-symbols:analytics-outline\\\"),\\n    inter"
+      },
+      {
+        "match": "session",
+        "index": 6271536,
+        "context": "D.subjects.root,\\n            icon: ICONS.subjects\\n        });\\n    }\\n    navConfig[0].items.push({\\n        title: \\\"session\\\",\\n        path: _routes_paths__WEBPACK_IMPORTED_MODULE_1__.PATH_DASHBOARD.sessions.root,\\n        icon: ICONS."
+      },
+      {
+        "match": "session",
+        "index": 6271620,
+        "context": "g[0].items.push({\\n        title: \\\"session\\\",\\n        path: _routes_paths__WEBPACK_IMPORTED_MODULE_1__.PATH_DASHBOARD.sessions.root,\\n        icon: ICONS.sessions\\n    }, {\\n        title: \\\"interview\\\",\\n        path: _routes_paths__WEBP"
+      },
+      {
+        "match": "session",
+        "index": 6271656,
+        "context": "session\\\",\\n        path: _routes_paths__WEBPACK_IMPORTED_MODULE_1__.PATH_DASHBOARD.sessions.root,\\n        icon: ICONS.sessions\\n    }, {\\n        title: \\\"interview\\\",\\n        path: _routes_paths__WEBPACK_IMPORTED_MODULE_1__.PATH_DASHBOA"
+      },
+      {
+        "match": "login",
+        "index": 6285751,
+        "context": "# sourceURL=webpack-internal:///./src/layouts/dashboard/nav/config-navigation.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/LoginLayout.js\":\n/*!******************************************!*\\\n  !*** ./src/layouts/login/LoginLayout.js ***!\n "
+      },
+      {
+        "match": "Login",
+        "index": 6285757,
+        "context": "ceURL=webpack-internal:///./src/layouts/dashboard/nav/config-navigation.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/LoginLayout.js\":\n/*!******************************************!*\\\n  !*** ./src/layouts/login/LoginLayout.js ***!\n  \\****"
+      },
+      {
+        "match": "login",
+        "index": 6285844,
+        "context": " }),\n\n/***/ \"./src/layouts/login/LoginLayout.js\":\n/*!******************************************!*\\\n  !*** ./src/layouts/login/LoginLayout.js ***!\n  \\******************************************/\n/***/ (function(module, __webpack_exports__, __"
+      },
+      {
+        "match": "Login",
+        "index": 6285850,
+        "context": "/***/ \"./src/layouts/login/LoginLayout.js\":\n/*!******************************************!*\\\n  !*** ./src/layouts/login/LoginLayout.js ***!\n  \\******************************************/\n/***/ (function(module, __webpack_exports__, __webpac"
+      },
+      {
+        "match": "Login",
+        "index": 6286211,
+        "context": " */ __webpack_require__.d(__webpack_exports__, {\\n/* harmony export */   \\\"default\\\": function() { return /* binding */ LoginLayout; }\\n/* harmony export */ });\\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = "
+      },
+      {
+        "match": "login",
+        "index": 6287762,
+        "context": ");\\n/* harmony import */ var _styles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles */ \\\"./src/layouts/login/styles.js\\\");\\n\\nvar _s = $RefreshSig$();\\n\\n// @mui\\n\\n// components\\n\\n\\n\\n\\n// --------------------------------"
+      },
+      {
+        "match": "Login",
+        "index": 6287922,
+        "context": "Sig$();\\n\\n// @mui\\n\\n// components\\n\\n\\n\\n\\n// ----------------------------------------------------------------------\\nLoginLayout.propTypes = {\\n    title: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string),\\n    children: (prop_t"
+      },
+      {
+        "match": "Login",
+        "index": 6288185,
+        "context": "MODULE_5___default().node),\\n    illustration: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string)\\n};\\nfunction LoginLayout(param) {\\n    let { children, illustration, title } = param;\\n    _s();\\n    const { translate } = (0,_local"
+      },
+      {
+        "match": "login",
+        "index": 6289154,
+        "context": " false, {\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                lineNumber: 24,\\n                columnNumber: 7\\n            }, this),\\n   "
+      },
+      {
+        "match": "Login",
+        "index": 6289163,
+        "context": "\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                lineNumber: 24,\\n                columnNumber: 7\\n            }, this),\\n            "
+      },
+      {
+        "match": "login",
+        "index": 6289915,
+        "context": "                       textAlign: \\\"center\\\"\\n                        },\\n                        children: translate(\\\"login.welcome\\\")\\n                    }, void 0, false, {\\n                        fileName: \\\"C:\\\\\\\\development\\\\\\\\Huda"
+      },
+      {
+        "match": "login",
+        "index": 6290091,
+        "context": "{\\n                        fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                        lineNumber: 34,\\n                        columnNumber: 9\\n          "
+      },
+      {
+        "match": "Login",
+        "index": 6290100,
+        "context": "                  fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                        lineNumber: 34,\\n                        columnNumber: 9\\n                   "
+      },
+      {
+        "match": "login",
+        "index": 6290887,
+        "context": "{\\n                        fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                        lineNumber: 38,\\n                        columnNumber: 9\\n          "
+      },
+      {
+        "match": "Login",
+        "index": 6290896,
+        "context": "                  fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                        lineNumber: 38,\\n                        columnNumber: 9\\n                   "
+      },
+      {
+        "match": "login",
+        "index": 6291317,
+        "context": "{\\n                        fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                        lineNumber: 46,\\n                        columnNumber: 9\\n          "
+      },
+      {
+        "match": "Login",
+        "index": 6291326,
+        "context": "                  fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                        lineNumber: 46,\\n                        columnNumber: 9\\n                   "
+      },
+      {
+        "match": "login",
+        "index": 6291617,
+        "context": ", true, {\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                lineNumber: 33,\\n                columnNumber: 7\\n            }, this),\\n   "
+      },
+      {
+        "match": "Login",
+        "index": 6291626,
+        "context": "\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                lineNumber: 33,\\n                columnNumber: 7\\n            }, this),\\n            "
+      },
+      {
+        "match": "login",
+        "index": 6292459,
+        "context": "ue, {\\n                    fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                    lineNumber: 50,\\n                    columnNumber: 9\\n                },"
+      },
+      {
+        "match": "Login",
+        "index": 6292468,
+        "context": "                  fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                    lineNumber: 50,\\n                    columnNumber: 9\\n                }, this)\\n "
+      },
+      {
+        "match": "login",
+        "index": 6292729,
+        "context": " false, {\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                lineNumber: 49,\\n                columnNumber: 7\\n            }, this)\\n    "
+      },
+      {
+        "match": "Login",
+        "index": 6292738,
+        "context": "\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n                lineNumber: 49,\\n                columnNumber: 7\\n            }, this)\\n        ]\\n  "
+      },
+      {
+        "match": "login",
+        "index": 6292981,
+        "context": ", void 0, true, {\\n        fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n        lineNumber: 23,\\n        columnNumber: 5\\n    }, this);\\n}\\n_s(LoginLayout, \\\"OKe44J"
+      },
+      {
+        "match": "Login",
+        "index": 6292990,
+        "context": " true, {\\n        fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n        lineNumber: 23,\\n        columnNumber: 5\\n    }, this);\\n}\\n_s(LoginLayout, \\\"OKe44JHoZI8kmOl"
+      },
+      {
+        "match": "Login",
+        "index": 6293080,
+        "context": "\\\\\\src\\\\\\\\layouts\\\\\\\\login\\\\\\\\LoginLayout.js\\\",\\n        lineNumber: 23,\\n        columnNumber: 5\\n    }, this);\\n}\\n_s(LoginLayout, \\\"OKe44JHoZI8kmOlMlFb4VMyi570=\\\", false, function() {\\n    return [\\n        _locales__WEBPACK_IMPORTED_MOD"
+      },
+      {
+        "match": "Login",
+        "index": 6293238,
+        "context": "i570=\\\", false, function() {\\n    return [\\n        _locales__WEBPACK_IMPORTED_MODULE_3__.useLocales\\n    ];\\n});\\n_c = LoginLayout;\\nvar _c;\\n$RefreshReg$(_c, \\\"LoginLayout\\\");\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the globa"
+      },
+      {
+        "match": "Login",
+        "index": 6293280,
+        "context": "\\n        _locales__WEBPACK_IMPORTED_MODULE_3__.useLocales\\n    ];\\n});\\n_c = LoginLayout;\\nvar _c;\\n$RefreshReg$(_c, \\\"LoginLayout\\\");\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the global scope\\n    ;\\n    (function () {\\n      "
+      },
+      {
+        "match": "login",
+        "index": 6300915,
+        "context": "libGVCeURlZmF1bHQiLCJhbHQiLCJzcmMiLCJ3aWR0aCJdLCJzb3VyY2VSb290IjoiIn0=\\n//# sourceURL=webpack-internal:///./src/layouts/login/LoginLayout.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/index.js\":\n/*!************************************!*\\\n"
+      },
+      {
+        "match": "Login",
+        "index": 6300921,
+        "context": "eURlZmF1bHQiLCJhbHQiLCJzcmMiLCJ3aWR0aCJdLCJzb3VyY2VSb290IjoiIn0=\\n//# sourceURL=webpack-internal:///./src/layouts/login/LoginLayout.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/index.js\":\n/*!************************************!*\\\n  !***"
+      },
+      {
+        "match": "login",
+        "index": 6300975,
+        "context": "90IjoiIn0=\\n//# sourceURL=webpack-internal:///./src/layouts/login/LoginLayout.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/index.js\":\n/*!************************************!*\\\n  !*** ./src/layouts/login/index.js ***!\n  \\****************"
+      },
+      {
+        "match": "login",
+        "index": 6301056,
+        "context": "n\"));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/index.js\":\n/*!************************************!*\\\n  !*** ./src/layouts/login/index.js ***!\n  \\************************************/\n/***/ (function(module, __webpack_exports__, __webpack_requ"
+      },
+      {
+        "match": "Login",
+        "index": 6301418,
+        "context": "ebpack_require__.d(__webpack_exports__, {\\n/* harmony export */   \\\"default\\\": function() { return /* reexport safe */ _LoginLayout__WEBPACK_IMPORTED_MODULE_0__[\\\"default\\\"]; }\\n/* harmony export */ });\\n/* harmony import */ var _LoginLayou"
+      },
+      {
+        "match": "Login",
+        "index": 6301528,
+        "context": " safe */ _LoginLayout__WEBPACK_IMPORTED_MODULE_0__[\\\"default\\\"]; }\\n/* harmony export */ });\\n/* harmony import */ var _LoginLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoginLayout */ \\\"./src/layouts/login/LoginLayout.js"
+      },
+      {
+        "match": "Login",
+        "index": 6301597,
+        "context": "* harmony export */ });\\n/* harmony import */ var _LoginLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoginLayout */ \\\"./src/layouts/login/LoginLayout.js\\\");\\n\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the globa"
+      },
+      {
+        "match": "login",
+        "index": 6301628,
+        "context": "mony import */ var _LoginLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoginLayout */ \\\"./src/layouts/login/LoginLayout.js\\\");\\n\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the global scope\\n    ;\\n    (function ("
+      },
+      {
+        "match": "Login",
+        "index": 6301634,
+        "context": "mport */ var _LoginLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LoginLayout */ \\\"./src/layouts/login/LoginLayout.js\\\");\\n\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the global scope\\n    ;\\n    (function () {\\n "
+      },
+      {
+        "match": "login",
+        "index": 6305762,
+        "context": "luTGF5b3V0JztcbiJdLCJuYW1lcyI6WyJkZWZhdWx0Il0sInNvdXJjZVJvb3QiOiIifQ==\\n//# sourceURL=webpack-internal:///./src/layouts/login/index.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/styles.js\":\n/*!*************************************!*\\\n  !*"
+      },
+      {
+        "match": "login",
+        "index": 6305816,
+        "context": "ZVJvb3QiOiIifQ==\\n//# sourceURL=webpack-internal:///./src/layouts/login/index.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/styles.js\":\n/*!*************************************!*\\\n  !*** ./src/layouts/login/styles.js ***!\n  \\*************"
+      },
+      {
+        "match": "login",
+        "index": 6305899,
+        "context": "));\n\n/***/ }),\n\n/***/ \"./src/layouts/login/styles.js\":\n/*!*************************************!*\\\n  !*** ./src/layouts/login/styles.js ***!\n  \\*************************************/\n/***/ (function(module, __webpack_exports__, __webpack_re"
+      },
+      {
+        "match": "login",
+        "index": 6316268,
+        "context": "wicGFkZGluZyIsInNwYWNpbmciLCJmbGV4U2hyaW5rIl0sInNvdXJjZVJvb3QiOiIifQ==\\n//# sourceURL=webpack-internal:///./src/layouts/login/styles.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/pages/dashboard/analytics/PropertyAutocomplete.js\":\n/*!******************"
+      },
+      {
+        "match": "Session",
+        "index": 6423469,
+        "context": "                                          {\\n                                                    label: translate(\\\"All_Sessions\\\"),\\n                                                    percent: 0,\\n                                         "
+      },
+      {
+        "match": "Session",
+        "index": 6423625,
+        "context": "                              percent: 0,\\n                                                    total: getAnalytic(\\\"All Sessions\\\")\\n                                                },\\n                                                {\\n    "
+      },
+      {
+        "match": "login",
+        "index": 6497961,
+        "context": "IifQ==\\n//# sourceURL=webpack-internal:///./src/pages/dashboard/analytics/index.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/pages/login.js\":\n/*!****************************!*\\\n  !*** ./src/pages/login.js ***!\n  \\****************************/\n/***/ (f"
+      },
+      {
+        "match": "login",
+        "index": 6498026,
+        "context": "nalytics/index.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/pages/login.js\":\n/*!****************************!*\\\n  !*** ./src/pages/login.js ***!\n  \\****************************/\n/***/ (function(module, __webpack_exports__, __webpack_require__) {\n\n\"use"
+      },
+      {
+        "match": "Login",
+        "index": 6498367,
+        "context": " */ __webpack_require__.d(__webpack_exports__, {\\n/* harmony export */   \\\"default\\\": function() { return /* binding */ LoginPage; }\\n/* harmony export */ });\\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __"
+      },
+      {
+        "match": "Login",
+        "index": 6499236,
+        "context": "= __webpack_require__(/*! ../auth/GuestGuard */ \\\"./src/auth/GuestGuard.js\\\");\\n/* harmony import */ var _sections_auth_Login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sections/auth/Login */ \\\"./src/sections/auth/Login.js\\\")"
+      },
+      {
+        "match": "Login",
+        "index": 6499314,
+        "context": "\\n/* harmony import */ var _sections_auth_Login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sections/auth/Login */ \\\"./src/sections/auth/Login.js\\\");\\n/* harmony import */ var _locales__WEBPACK_IMPORTED_MODULE_4__ = __webpack_"
+      },
+      {
+        "match": "Login",
+        "index": 6499345,
+        "context": "tions_auth_Login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../sections/auth/Login */ \\\"./src/sections/auth/Login.js\\\");\\n/* harmony import */ var _locales__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../locales */ \\\"."
+      },
+      {
+        "match": "Login",
+        "index": 6499643,
+        "context": "$();\\n\\n// auth\\n\\n// sections\\n\\n\\n// ----------------------------------------------------------------------\\nfunction LoginPage() {\\n    _s();\\n    const { translate } = (0,_locales__WEBPACK_IMPORTED_MODULE_4__.useLocales)();\\n    return "
+      },
+      {
+        "match": "Login",
+        "index": 6500284,
+        "context": "DEV)(\\\"title\\\", {\\n                    children: [\\n                        \\\" \\\",\\n                        translate(\\\"Login_page_new_title\\\"),\\n                        \\\" \\\"\\n                    ]\\n                }, void 0, true, {\\n    "
+      },
+      {
+        "match": "login",
+        "index": 6500511,
+        "context": "true, {\\n                    fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\pages\\\\\\\\login.js\\\",\\n                    lineNumber: 17,\\n                    columnNumber: 9\\n                }, this)\\n       "
+      },
+      {
+        "match": "login",
+        "index": 6500764,
+        "context": "0, false, {\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\pages\\\\\\\\login.js\\\",\\n                lineNumber: 16,\\n                columnNumber: 7\\n            }, this),\\n            /*#__P"
+      },
+      {
+        "match": "Login",
+        "index": 6501134,
+        "context": "{\\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_sections_auth_Login__WEBPACK_IMPORTED_MODULE_3__[\\\"default\\\"], {}, void 0, false, {\\n                    fileName: \\\"C:\\\\\\\\development"
+      },
+      {
+        "match": "login",
+        "index": 6501316,
+        "context": "alse, {\\n                    fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\pages\\\\\\\\login.js\\\",\\n                    lineNumber: 21,\\n                    columnNumber: 9\\n                }, this)\\n       "
+      },
+      {
+        "match": "login",
+        "index": 6501569,
+        "context": "0, false, {\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\pages\\\\\\\\login.js\\\",\\n                lineNumber: 20,\\n                columnNumber: 7\\n            }, this)\\n        ]\\n    }, v"
+      },
+      {
+        "match": "Login",
+        "index": 6501710,
+        "context": "        lineNumber: 20,\\n                columnNumber: 7\\n            }, this)\\n        ]\\n    }, void 0, true);\\n}\\n_s(LoginPage, \\\"OKe44JHoZI8kmOlMlFb4VMyi570=\\\", false, function() {\\n    return [\\n        _locales__WEBPACK_IMPORTED_MODUL"
+      },
+      {
+        "match": "Login",
+        "index": 6501866,
+        "context": "i570=\\\", false, function() {\\n    return [\\n        _locales__WEBPACK_IMPORTED_MODULE_4__.useLocales\\n    ];\\n});\\n_c = LoginPage;\\nvar _c;\\n$RefreshReg$(_c, \\\"LoginPage\\\");\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the global sc"
+      },
+      {
+        "match": "Login",
+        "index": 6501906,
+        "context": " [\\n        _locales__WEBPACK_IMPORTED_MODULE_4__.useLocales\\n    ];\\n});\\n_c = LoginPage;\\nvar _c;\\n$RefreshReg$(_c, \\\"LoginPage\\\");\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the global scope\\n    ;\\n    (function () {\\n        "
+      },
+      {
+        "match": "login",
+        "index": 6507145,
+        "context": "bGVzIiwiTG9naW5QYWdlIiwidHJhbnNsYXRlIiwidGl0bGUiXSwic291cmNlUm9vdCI6IiJ9\\n//# sourceURL=webpack-internal:///./src/pages/login.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/sections/analytics/AppAreaInstalled.js\":\n/*!************************************"
+      },
+      {
+        "match": "Login",
+        "index": 7182949,
+        "context": "=\\n//# sourceURL=webpack-internal:///./src/sections/analytics/index.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/sections/auth/AuthLoginForm.js\":\n/*!********************************************!*\\\n  !*** ./src/sections/auth/AuthLoginForm.js ***!\n  \\**"
+      },
+      {
+        "match": "Login",
+        "index": 7183046,
+        "context": "/src/sections/auth/AuthLoginForm.js\":\n/*!********************************************!*\\\n  !*** ./src/sections/auth/AuthLoginForm.js ***!\n  \\********************************************/\n/***/ (function(module, __webpack_exports__, __webpac"
+      },
+      {
+        "match": "Login",
+        "index": 7183411,
+        "context": "__webpack_require__.d(__webpack_exports__, {\\n/* harmony export */   \\\"default\\\": function() { return /* binding */ AuthLoginForm; }\\n/* harmony export */ });\\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __"
+      },
+      {
+        "match": "Login",
+        "index": 7185896,
+        "context": "// auth\\n\\n// components\\n\\n\\n\\n// ----------------------------------------------------------------------\\nfunction AuthLoginForm() {\\n    _s();\\n    const { login } = (0,_auth_useAuthContext__WEBPACK_IMPORTED_MODULE_4__.useAuthContext)();\\"
+      },
+      {
+        "match": "login",
+        "index": 7185934,
+        "context": "-------------------------------------------------------------------\\nfunction AuthLoginForm() {\\n    _s();\\n    const { login } = (0,_auth_useAuthContext__WEBPACK_IMPORTED_MODULE_4__.useAuthContext)();\\n    const { translate } = (0,_locales"
+      },
+      {
+        "match": "Login",
+        "index": 7186211,
+        "context": "les)();\\n    const [showPassword, setShowPassword] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\\n    const LoginSchema = yup__WEBPACK_IMPORTED_MODULE_2__.object().shape({\\n        email: yup__WEBPACK_IMPORTED_MODULE_2__.string("
+      },
+      {
+        "match": "Login",
+        "index": 7186722,
+        "context": "_IMPORTED_MODULE_8__.useForm)({\\n        resolver: (0,_hookform_resolvers_yup__WEBPACK_IMPORTED_MODULE_3__.yupResolver)(LoginSchema),\\n        defaultValues\\n    });\\n    const { reset, setError, handleSubmit, formState: { errors, isSubmitt"
+      },
+      {
+        "match": "login",
+        "index": 7186953,
+        "context": "isSubmitting, isSubmitSuccessful } } = methods;\\n    const onSubmit = async (data)=>{\\n        try {\\n            await login(data.email, data.password);\\n        } catch (error) {\\n            console.error(error);\\n            setError(\\\""
+      },
+      {
+        "match": "Login",
+        "index": 7188260,
+        "context": "              fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\AuthLoginForm.js\\\",\\n                        lineNumber: 62,\\n                        columnNumber: 34\\n                    "
+      },
+      {
+        "match": "login",
+        "index": 7188640,
+        "context": "PORTED_MODULE_6__.RHFTextField, {\\n                        name: \\\"email\\\",\\n                        label: translate(\\\"login.email_address\\\")\\n                    }, void 0, false, {\\n                        fileName: \\\"C:\\\\\\\\development\\\\"
+      },
+      {
+        "match": "Login",
+        "index": 7188835,
+        "context": "              fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\AuthLoginForm.js\\\",\\n                        lineNumber: 64,\\n                        columnNumber: 9\\n                    }"
+      },
+      {
+        "match": "login",
+        "index": 7189217,
+        "context": "TED_MODULE_6__.RHFTextField, {\\n                        name: \\\"password\\\",\\n                        label: translate(\\\"login.password\\\"),\\n                        type: showPassword ? \\\"text\\\" : \\\"password\\\",\\n                        Input"
+      },
+      {
+        "match": "Login",
+        "index": 7190708,
+        "context": "              fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\AuthLoginForm.js\\\",\\n                        lineNumber: 66,\\n                        columnNumber: 9\\n                    }"
+      },
+      {
+        "match": "Login",
+        "index": 7191010,
+        "context": "              fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\AuthLoginForm.js\\\",\\n                lineNumber: 61,\\n                columnNumber: 7\\n            }, this),\\n            /*"
+      },
+      {
+        "match": "login",
+        "index": 7191999,
+        "context": "                 },\\n                    marginTop: \\\"30px\\\"\\n                },\\n                children: translate(\\\"login.login\\\")\\n            }, void 0, false, {\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\H"
+      },
+      {
+        "match": "login",
+        "index": 7192005,
+        "context": "           },\\n                    marginTop: \\\"30px\\\"\\n                },\\n                children: translate(\\\"login.login\\\")\\n            }, void 0, false, {\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-"
+      },
+      {
+        "match": "Login",
+        "index": 7192170,
+        "context": "              fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\AuthLoginForm.js\\\",\\n                lineNumber: 82,\\n                columnNumber: 7\\n            }, this)\\n        ]\\n    "
+      },
+      {
+        "match": "Login",
+        "index": 7192424,
+        "context": "e, {\\n        fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\AuthLoginForm.js\\\",\\n        lineNumber: 60,\\n        columnNumber: 5\\n    }, this);\\n}\\n_s(AuthLoginForm, \\\"P1idNv8YjIc3Iox"
+      },
+      {
+        "match": "Login",
+        "index": 7192516,
+        "context": "\\\\\\\\sections\\\\\\\\auth\\\\\\\\AuthLoginForm.js\\\",\\n        lineNumber: 60,\\n        columnNumber: 5\\n    }, this);\\n}\\n_s(AuthLoginForm, \\\"P1idNv8YjIc3IoxOxQjnXZO2jKU=\\\", false, function() {\\n    return [\\n        _auth_useAuthContext__WEBPACK_IM"
+      },
+      {
+        "match": "Login",
+        "index": 7192814,
+        "context": "CK_IMPORTED_MODULE_7__.useLocales,\\n        react_hook_form__WEBPACK_IMPORTED_MODULE_8__.useForm\\n    ];\\n});\\n_c = AuthLoginForm;\\nvar _c;\\n$RefreshReg$(_c, \\\"AuthLoginForm\\\");\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the globa"
+      },
+      {
+        "match": "Login",
+        "index": 7192858,
+        "context": "react_hook_form__WEBPACK_IMPORTED_MODULE_8__.useForm\\n    ];\\n});\\n_c = AuthLoginForm;\\nvar _c;\\n$RefreshReg$(_c, \\\"AuthLoginForm\\\");\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the global scope\\n    ;\\n    (function () {\\n        "
+      },
+      {
+        "match": "Login",
+        "index": 7204373,
+        "context": "YWxldHRlIiwibW9kZSIsIm1hcmdpblRvcCJdLCJzb3VyY2VSb290IjoiIn0=\\n//# sourceURL=webpack-internal:///./src/sections/auth/AuthLoginForm.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/sections/auth/AuthWithSocial.js\":\n/*!***************************************"
+      },
+      {
+        "match": "login",
+        "index": 7205469,
+        "context": "------------------------------------------------------------------\\nfunction AuthWithSocial() {\\n    _s();\\n    const { loginWithGoogle, loginWithGithub, loginWithTwitter } = (0,_auth_useAuthContext__WEBPACK_IMPORTED_MODULE_0__.useAuthConte"
+      },
+      {
+        "match": "login",
+        "index": 7205486,
+        "context": "-------------------------------------------------\\nfunction AuthWithSocial() {\\n    _s();\\n    const { loginWithGoogle, loginWithGithub, loginWithTwitter } = (0,_auth_useAuthContext__WEBPACK_IMPORTED_MODULE_0__.useAuthContext)();\\n    const"
+      },
+      {
+        "match": "login",
+        "index": 7205503,
+        "context": "--------------------------------\\nfunction AuthWithSocial() {\\n    _s();\\n    const { loginWithGoogle, loginWithGithub, loginWithTwitter } = (0,_auth_useAuthContext__WEBPACK_IMPORTED_MODULE_0__.useAuthContext)();\\n    const handleGoogleLogi"
+      },
+      {
+        "match": "Login",
+        "index": 7205619,
+        "context": "ub, loginWithTwitter } = (0,_auth_useAuthContext__WEBPACK_IMPORTED_MODULE_0__.useAuthContext)();\\n    const handleGoogleLogin = async ()=>{\\n        try {\\n            if (loginWithGoogle) {\\n                loginWithGoogle();\\n            "
+      },
+      {
+        "match": "login",
+        "index": 7205671,
+        "context": "BPACK_IMPORTED_MODULE_0__.useAuthContext)();\\n    const handleGoogleLogin = async ()=>{\\n        try {\\n            if (loginWithGoogle) {\\n                loginWithGoogle();\\n            }\\n        } catch (error) {\\n            console.er"
+      },
+      {
+        "match": "login",
+        "index": 7205707,
+        "context": "text)();\\n    const handleGoogleLogin = async ()=>{\\n        try {\\n            if (loginWithGoogle) {\\n                loginWithGoogle();\\n            }\\n        } catch (error) {\\n            console.error(error);\\n        }\\n    };\\n    "
+      },
+      {
+        "match": "Login",
+        "index": 7205845,
+        "context": "\\n            }\\n        } catch (error) {\\n            console.error(error);\\n        }\\n    };\\n    const handleGithubLogin = async ()=>{\\n        try {\\n            if (loginWithGithub) {\\n                loginWithGithub();\\n            "
+      },
+      {
+        "match": "login",
+        "index": 7205897,
+        "context": "    console.error(error);\\n        }\\n    };\\n    const handleGithubLogin = async ()=>{\\n        try {\\n            if (loginWithGithub) {\\n                loginWithGithub();\\n            }\\n        } catch (error) {\\n            console.er"
+      },
+      {
+        "match": "login",
+        "index": 7205933,
+        "context": "\\n    };\\n    const handleGithubLogin = async ()=>{\\n        try {\\n            if (loginWithGithub) {\\n                loginWithGithub();\\n            }\\n        } catch (error) {\\n            console.error(error);\\n        }\\n    };\\n    "
+      },
+      {
+        "match": "Login",
+        "index": 7206072,
+        "context": "n            }\\n        } catch (error) {\\n            console.error(error);\\n        }\\n    };\\n    const handleTwitterLogin = async ()=>{\\n        try {\\n            if (loginWithTwitter) {\\n                loginWithTwitter();\\n          "
+      },
+      {
+        "match": "login",
+        "index": 7206124,
+        "context": "   console.error(error);\\n        }\\n    };\\n    const handleTwitterLogin = async ()=>{\\n        try {\\n            if (loginWithTwitter) {\\n                loginWithTwitter();\\n            }\\n        } catch (error) {\\n            console."
+      },
+      {
+        "match": "login",
+        "index": 7206161,
+        "context": "    };\\n    const handleTwitterLogin = async ()=>{\\n        try {\\n            if (loginWithTwitter) {\\n                loginWithTwitter();\\n            }\\n        } catch (error) {\\n            console.error(error);\\n        }\\n    };\\n}\\n"
+      },
+      {
+        "match": "Login",
+        "index": 7212941,
+        "context": "=\\n//# sourceURL=webpack-internal:///./src/sections/auth/AuthWithSocial.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/sections/auth/Login.js\":\n/*!************************************!*\\\n  !*** ./src/sections/auth/Login.js ***!\n  \\**********************"
+      },
+      {
+        "match": "Login",
+        "index": 7213022,
+        "context": "\n/***/ }),\n\n/***/ \"./src/sections/auth/Login.js\":\n/*!************************************!*\\\n  !*** ./src/sections/auth/Login.js ***!\n  \\************************************/\n/***/ (function(module, __webpack_exports__, __webpack_require__)"
+      },
+      {
+        "match": "Login",
+        "index": 7213371,
+        "context": " */ __webpack_require__.d(__webpack_exports__, {\\n/* harmony export */   \\\"default\\\": function() { return /* binding */ Login; }\\n/* harmony export */ });\\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webp"
+      },
+      {
+        "match": "login",
+        "index": 7214310,
+        "context": "ebpack_require__(/*! ../../auth/useAuthContext */ \\\"./src/auth/useAuthContext.js\\\");\\n/* harmony import */ var _layouts_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../layouts/login */ \\\"./src/layouts/login/index.js\\\");\\n"
+      },
+      {
+        "match": "login",
+        "index": 7214385,
+        "context": "xt.js\\\");\\n/* harmony import */ var _layouts_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../layouts/login */ \\\"./src/layouts/login/index.js\\\");\\n/* harmony import */ var _AuthLoginForm__WEBPACK_IMPORTED_MODULE_3__ = __we"
+      },
+      {
+        "match": "login",
+        "index": 7214410,
+        "context": "ort */ var _layouts_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../layouts/login */ \\\"./src/layouts/login/index.js\\\");\\n/* harmony import */ var _AuthLoginForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Aut"
+      },
+      {
+        "match": "Login",
+        "index": 7214460,
+        "context": "_2__ = __webpack_require__(/*! ../../layouts/login */ \\\"./src/layouts/login/index.js\\\");\\n/* harmony import */ var _AuthLoginForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AuthLoginForm */ \\\"./src/sections/auth/AuthLoginForm."
+      },
+      {
+        "match": "Login",
+        "index": 7214531,
+        "context": "ogin/index.js\\\");\\n/* harmony import */ var _AuthLoginForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AuthLoginForm */ \\\"./src/sections/auth/AuthLoginForm.js\\\");\\n/* harmony import */ var _AuthWithSocial__WEBPACK_IMPORTED_MODU"
+      },
+      {
+        "match": "Login",
+        "index": 7214570,
+        "context": " var _AuthLoginForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AuthLoginForm */ \\\"./src/sections/auth/AuthLoginForm.js\\\");\\n/* harmony import */ var _AuthWithSocial__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Auth"
+      },
+      {
+        "match": "Login",
+        "index": 7215043,
+        "context": "n// auth\\n\\n// layouts\\n\\n//\\n\\n\\n\\n// ----------------------------------------------------------------------\\nfunction Login() {\\n    _s();\\n    const { method } = (0,_auth_useAuthContext__WEBPACK_IMPORTED_MODULE_1__.useAuthContext)();\\n  "
+      },
+      {
+        "match": "login",
+        "index": 7215340,
+        "context": "ULE_5__.useLocales)();\\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_layouts_login__WEBPACK_IMPORTED_MODULE_2__[\\\"default\\\"], {\\n        children: [\\n            /*#__PURE__*/ (0,react_jsx_dev_runt"
+      },
+      {
+        "match": "login",
+        "index": 7216093,
+        "context": "ORTED_MODULE_6__.Typography, {\\n                        variant: \\\"h4\\\",\\n                        children: translate(\\\"login.signInToMinimal\\\")\\n                    }, void 0, false, {\\n                        fileName: \\\"C:\\\\\\\\development"
+      },
+      {
+        "match": "signIn",
+        "index": 7216099,
+        "context": "MODULE_6__.Typography, {\\n                        variant: \\\"h4\\\",\\n                        children: translate(\\\"login.signInToMinimal\\\")\\n                    }, void 0, false, {\\n                        fileName: \\\"C:\\\\\\\\development\\\\\\\\Hu"
+      },
+      {
+        "match": "Login",
+        "index": 7216286,
+        "context": "                  fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\Login.js\\\",\\n                        lineNumber: 20,\\n                        columnNumber: 9\\n                    }, th"
+      },
+      {
+        "match": "Login",
+        "index": 7217541,
+        "context": "                  fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\Login.js\\\",\\n                            lineNumber: 29,\\n                            columnNumber: 11\\n                "
+      },
+      {
+        "match": "Login",
+        "index": 7217846,
+        "context": "                  fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\Login.js\\\",\\n                        lineNumber: 28,\\n                        columnNumber: 9\\n                    }, th"
+      },
+      {
+        "match": "Login",
+        "index": 7218140,
+        "context": "\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\Login.js\\\",\\n                lineNumber: 19,\\n                columnNumber: 7\\n            }, this),\\n            /*#__P"
+      },
+      {
+        "match": "Login",
+        "index": 7218335,
+        "context": " 7\\n            }, this),\\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_AuthLoginForm__WEBPACK_IMPORTED_MODULE_3__[\\\"default\\\"], {}, void 0, false, {\\n                fileName: \\\"C:\\\\\\\\development"
+      },
+      {
+        "match": "Login",
+        "index": 7218528,
+        "context": "\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\Login.js\\\",\\n                lineNumber: 40,\\n                columnNumber: 7\\n            }, this),\\n            /*#__P"
+      },
+      {
+        "match": "Login",
+        "index": 7218917,
+        "context": "\\n                fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\Login.js\\\",\\n                lineNumber: 42,\\n                columnNumber: 7\\n            }, this)\\n        ]\\n    }, v"
+      },
+      {
+        "match": "Login",
+        "index": 7219163,
+        "context": " true, {\\n        fileName: \\\"C:\\\\\\\\development\\\\\\\\Hudayi-React-main\\\\\\\\Hudayi-React-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\Login.js\\\",\\n        lineNumber: 18,\\n        columnNumber: 5\\n    }, this);\\n}\\n_s(Login, \\\"cnX8xF0JoGVs27R1btrXTksQ+Co"
+      },
+      {
+        "match": "Login",
+        "index": 7219247,
+        "context": "-main\\\\\\\\src\\\\\\\\sections\\\\\\\\auth\\\\\\\\Login.js\\\",\\n        lineNumber: 18,\\n        columnNumber: 5\\n    }, this);\\n}\\n_s(Login, \\\"cnX8xF0JoGVs27R1btrXTksQ+Co=\\\", false, function() {\\n    return [\\n        _auth_useAuthContext__WEBPACK_IMPORT"
+      },
+      {
+        "match": "Login",
+        "index": 7219474,
+        "context": "EBPACK_IMPORTED_MODULE_1__.useAuthContext,\\n        _locales__WEBPACK_IMPORTED_MODULE_5__.useLocales\\n    ];\\n});\\n_c = Login;\\nvar _c;\\n$RefreshReg$(_c, \\\"Login\\\");\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the global scope\\n   "
+      },
+      {
+        "match": "Login",
+        "index": 7219510,
+        "context": "ntext,\\n        _locales__WEBPACK_IMPORTED_MODULE_5__.useLocales\\n    ];\\n});\\n_c = Login;\\nvar _c;\\n$RefreshReg$(_c, \\\"Login\\\");\\n\\n\\n;\\n    // Wrapped in an IIFE to avoid polluting the global scope\\n    ;\\n    (function () {\\n        var "
+      },
+      {
+        "match": "Login",
+        "index": 7226597,
+        "context": "cmMiLCJ3aWR0aCIsImhlaWdodCIsInJpZ2h0Il0sInNvdXJjZVJvb3QiOiIifQ==\\n//# sourceURL=webpack-internal:///./src/sections/auth/Login.js\\n\"));\n\n/***/ }),\n\n/***/ \"./src/sections/general/analytics/AnalyticsConversionRates.js\":\n/*!********************"
+      },
+      {
+        "match": "LOGIN",
+        "index": 9202603,
+        "context": ": \\\"GAMMADIST\\\",\\n  287: \\\"GAMMAINV\\\",\\n  288: \\\"CEILING\\\",\\n  289: \\\"HYPGEOMDIST\\\",\\n  290: \\\"LOGNORMDIST\\\",\\n  291: \\\"LOGINV\\\",\\n  292: \\\"NEGBINOMDIST\\\",\\n  293: \\\"NORMDIST\\\",\\n  294: \\\"NORMSDIST\\\",\\n  295: \\\"NORMINV\\\",\\n  296: \\\"NORMSINV"
+      }
+    ],
+    "/NEXT_PUBLIC_[A-Z0-9_]+/g": [],
+    "/(https?:\\/\\/[^\\\"']+\\/api\\/[^\\\"']+)/g": [
+      {
+        "match": "https://mui.com/material-ui/react-timeline/)\\n *\\n * API:\\n *\\n * - [Timeline API](https://mui.com/material-ui/api/timeline/)\\n */\\nconst Timeline = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function Timeline(inProps, ref) {\\n  const props = (0,_mui_material_styles__WEBPACK_IMPORTED_MODULE_8__.useThemeProps)({\\n    props: inProps,\\n    name: ",
+        "index": 405888,
+        "context": "ex',\\n  flexDirection: 'column',\\n  padding: '6px 16px',\\n  flexGrow: 1\\n});\\n\\n/**\\n *\\n * Demos:\\n *\\n * - [Timeline](https://mui.com/material-ui/react-timeline/)\\n *\\n * API:\\n *\\n * - [Timeline API](https://mui.com/material-ui/api/timel"
+      },
+      {
+        "match": "https://mui.com/components/timeline/)\\n *\\n * API:\\n *\\n * - [Timeline API](https://mui.com/api/timeline/)\\n */\\n/* harmony default export */ __webpack_exports__[\\",
+        "index": 409024,
+        "context": "func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object)])\\n} : 0;\\n\\n/**\\n *\\n * Demos:\\n *\\n * - [Timeline](https://mui.com/components/timeline/)\\n *\\n * API:\\n *\\n * - [Timeline API](https://mui.com/api/timeline/)\\n */\\n/* harm"
+      }
+    ],
+    "/fetch\\(/g": [
+      {
+        "match": "fetch(",
+        "index": 2768064,
+        "context": "ules/next/dist/client/components/router-reducer/router-reducer-types.js\\\");\\nconst prefetched = new Set();\\nfunction prefetch(router, href, as, options, appOptions, isAppRouter) {\\n    if (false) {}\\n    // app-router supports external urls"
+      },
+      {
+        "match": "fetch(",
+        "index": 2769018,
+        "context": " URL as prefetched.\\n        prefetched.add(prefetchedKey);\\n    }\\n    const prefetchPromise = isAppRouter ? router.prefetch(href, appOptions) : router.prefetch(href, as, options);\\n    // Prefetch the JSON page if asked (only in the clien"
+      },
+      {
+        "match": "fetch(",
+        "index": 2769054,
+        "context": "hed.add(prefetchedKey);\\n    }\\n    const prefetchPromise = isAppRouter ? router.prefetch(href, appOptions) : router.prefetch(href, as, options);\\n    // Prefetch the JSON page if asked (only in the client)\\n    // We need to handle a prefe"
+      },
+      {
+        "match": "fetch(",
+        "index": 2781691,
+        "context": "        if (!isVisible || !prefetchEnabled) {\\n            return;\\n        }\\n        // Prefetch the URL.\\n        prefetch(router, href, as, {\\n            locale\\n        }, {\\n            kind: appPrefetchKind\\n        }, isAppRouter);"
+      },
+      {
+        "match": "fetch(",
+        "index": 2783404,
+        "context": "abled || \\\"development\\\" === \\\"development\\\") && isAppRouter) {\\n                return;\\n            }\\n            prefetch(router, href, as, {\\n                locale,\\n                priority: true,\\n                // @see {https://gi"
+      },
+      {
+        "match": "fetch(",
+        "index": 2784246,
+        "context": "          }\\n            if (!prefetchEnabled && isAppRouter) {\\n                return;\\n            }\\n            prefetch(router, href, as, {\\n                locale,\\n                priority: true,\\n                // @see {https://gi"
+      },
+      {
+        "match": "fetch(",
+        "index": 7387435,
+        "context": "PACK_IMPORTED_MODULE_2__.version, \\\"/\\\").concat(query);\\n    try {\\n        var _data_;\\n        const response = await fetch(apiUrl, requestOptions);\\n        if (!response.ok) {\\n            throw new Error(\\\"HTTP error! status: \\\".concat"
+      },
+      {
+        "match": "fetch(",
+        "index": 7390533,
+        "context": "c_utils_varibles__WEBPACK_IMPORTED_MODULE_2__.version, \\\"/\\\").concat(query);\\n    try {\\n        const response = await fetch(apiUrl, requestOptions);\\n        if (!response.ok) {\\n            throw new Error(\\\"HTTP error! status: \\\".concat"
+      },
+      {
+        "match": "fetch(",
+        "index": 8410450,
+        "context": "e,\\n                    ].some((value) => value && value.includes('json'));\\n                    const response = await fetch(action, {\\n                        method,\\n                        headers: {\\n                            ...hea"
+      }
+    ]
+  },
+  "nextData": []
+}

@@ -20,18 +20,16 @@ class AppAnalyticsController extends AnalyticsController
 
     public function appGetGeneralCounts(Request $request, string $timeFilter, ?string $customStartDate, ?string $customEndDate): JsonResponse
     {
-//                dd($customStartDate == null );
-        $customStartDate = $customStartDate != null ? Carbon::parse($customStartDate) : null;
-        $customEndDate = $customEndDate != null ? Carbon::parse($customEndDate) : null;
-
+        $customStartDate = $customStartDate != null && $customStartDate != 'undefined' ? Carbon::parse($customStartDate) : null;
+        $customEndDate = $customEndDate != null && $customEndDate != 'undefined' ? Carbon::parse($customEndDate) : null;
         return $this->response($request, $this->appRepo->appGetGeneralCounts($timeFilter, $customStartDate, $customEndDate));
     }
 
     public function appGetTopLearners(Request $request, string $timeFilter, ?string $customStartDate, ?string $customEndDate): JsonResponse
     {
 
-        $customStartDate = $customStartDate != null ? Carbon::parse($customStartDate) : null;
-        $customEndDate = $customEndDate != null ? Carbon::parse($customEndDate) : null;
+        $customStartDate = $customStartDate != null && $customStartDate != 'undefined' ? Carbon::parse($customStartDate) : null;
+        $customEndDate = $customEndDate != null && $customEndDate != 'undefined' ? Carbon::parse($customEndDate) : null;
 
         return $this->response($request, $this->appRepo->appGetTopLearners($timeFilter, $customStartDate, $customEndDate));
     }

@@ -46,6 +46,7 @@ class UserSeeder extends Seeder
             'blood_type' => 'BP',
             'remember_token' => Str()->random(20),
             'is_approved' => true,
+            'status' => '1',
 
         ]);
 

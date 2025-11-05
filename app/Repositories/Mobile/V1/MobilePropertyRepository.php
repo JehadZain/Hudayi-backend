@@ -13,6 +13,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image;
 
 class MobilePropertyRepository extends PropertyRepository implements IMobileProperty
 {
@@ -960,31 +961,25 @@ class MobilePropertyRepository extends PropertyRepository implements IMobileProp
         try {
             DB::beginTransaction();
             $obj = new $this->model;
-            $obj->fill($object->toArray());
+            $data = $object->except('image');
+            $obj->fill($data);
 
-            // Check if the image is present in the request
-            //            if ($object->hasFile('image')) {
-            //                $image = $object->file('image');
-            //                $path = Storage::putFile('public/images/properties', $image);
-            //                $obj->image = $path;
-            //            }
-            if (isset($object['image'])) {
-                $imageUrl = $object['image'];
-                $imageData = file_get_contents($imageUrl);
-                $base64 = base64_encode($imageData);
-                $path = 'storage/images/properties';
+            if ($object->hasFile('image')) {
+                $image = $object->file('image');
+                $filename = uniqid() . '.' . $image->getClientOriginalExtension();
+                $path = 'images/properties/' . $filename;
 
-                // Generate a unique filename for the image
-                $filename = uniqid() . '.' . 'png';
+                // Compress and save the image
+                $img = Image::make($image->getRealPath());
+                $img->resize(1200, null, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                });
 
-                // Build the full path to the file
-                $fullPath = public_path($path . '/' . $filename);
+                Storage::disk('public')->put($path, (string) $img->encode());
 
-                // Save the base64-encoded image data to disk
-                file_put_contents($fullPath, base64_decode($base64));
-
-                // Store the path link in the database
-                $obj->image = $path . '/' . $filename;
+                // The path to be stored in DB should be accessible from the web
+                $obj->image = 'storage/' . $path;
             }
 
             $obj->save();
@@ -1002,7 +997,7 @@ class MobilePropertyRepository extends PropertyRepository implements IMobileProp
             return $this->setResponse(
                 parent::FAILED,
                 null,
-                ["Couldn't Create Property"],
+                ["Couldn't Create Property: " . $e->getMessage()],
 
             );
         }
@@ -1014,35 +1009,30 @@ class MobilePropertyRepository extends PropertyRepository implements IMobileProp
             DB::beginTransaction();
 
             $obj = $this->builder->whereId($id)->firstOrFail();
-            $obj->fill($object->toArray());
+            $data = $object->except('image');
+            $obj->fill($data);
 
-            // Check if the image is present in the request
-            if (isset($object['image'])) {
-                $imageUrl = $object['image'];
-                $imageData = file_get_contents($imageUrl);
-                $base64 = base64_encode($imageData);
-                $path = 'storage/images/properties';
-
-                // Generate a unique filename for the image
-                $filename = uniqid() . '.' . 'png';
-
-                // Build the full path to the file
-                $fullPath = public_path($path . '/' . $filename);
-
-                // Save the base64-encoded image data to disk
-                file_put_contents($fullPath, base64_decode($base64));
-
-                // Check if there's an old image
-                if (!empty($obj->image)) {
-                    // Delete the old image file
-                    $oldImagePath = public_path($obj->image);
-                    if (file_exists($oldImagePath)) {
-                        unlink($oldImagePath);
-                    }
+            if ($object->hasFile('image')) {
+                // Delete the old image if it exists
+                if ($obj->image && Storage::disk('public')->exists(str_replace('storage/', '', $obj->image))) {
+                    Storage::disk('public')->delete(str_replace('storage/', '', $obj->image));
                 }
 
-                // Store the path link in the database
-                $obj->image = $path . '/' . $filename;
+                $image = $object->file('image');
+                $filename = uniqid() . '.' . $image->getClientOriginalExtension();
+                $path = 'images/properties/' . $filename;
+
+                // Compress and save the new image
+                $img = Image::make($image->getRealPath());
+                $img->resize(1200, null, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                });
+
+                Storage::disk('public')->put($path, (string) $img->encode());
+
+                // The path to be stored in DB should be accessible from the web
+                $obj->image = 'storage/' . $path;
             }
 
             $obj->save();
@@ -1060,7 +1050,7 @@ class MobilePropertyRepository extends PropertyRepository implements IMobileProp
             return $this->setResponse(
                 parent::FAILED,
                 null,
-                ["Couldn't Update Property"],
+                ["Couldn't Update Property: " . $e->getMessage()],
 
             );
         }

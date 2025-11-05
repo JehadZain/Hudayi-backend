@@ -213,127 +213,150 @@ class AppAnalyticsRepository extends AnalyticsRepository implements IAppAnalytic
                 //                    break;
             }
 
-            //Users Statistics
-//            $approvedUsersCount = User::where('is_approved', 1)
-//                ->whereBetween('created_at', [$startDate, $endDate])
-//                ->count();
-//            $pendingUsersCount = User::where('is_approved', 0)
-//                ->whereBetween('created_at', [$startDate, $endDate])
-//                ->count();
-//
-//            $maleUsersCount = User::where('is_approved', 1)
-//                ->whereBetween('created_at', [$startDate, $endDate])
-//                ->whereIn('gender', ['male', 'ذكر'])
-//                ->count();
-//
-//            $femaleUsersCount = User::where('is_approved', 1)
-//                ->whereBetween('created_at', [$startDate, $endDate])
-//                ->whereIn('gender', ['female', 'أنثى'])
-//                ->count();
-//
-//            $activeUsersCount = User::where('is_approved', 1)
-//                ->whereBetween('created_at', [$startDate, $endDate])
-//                ->whereIn('status', ['active', 'فعال', '1'])
-//                ->count();
-//
-//            $inactiveUsersCount = User::where('is_approved', 1)
-//                ->whereBetween('created_at', [$startDate, $endDate])
-//                ->whereIn('status', ['passive', 'غير فعال', '0'])
-//                ->count();
-//
-//            $sickUsersCount = User::where('is_approved', 1)
-//                ->whereBetween('created_at', [$startDate, $endDate])
-//                ->whereIn('is_has_disease', ['yes', 'نعم', '1'])
-//                ->count();
-//
-//            $unsickUsersCount = User::where('is_approved', 1)
-//                ->whereBetween('created_at', [$startDate, $endDate])
-//                ->whereIn('is_has_disease', ['no', 'لا', '0'])
-//                ->count();
-//
-//            //Students Statistics
-//
-//            $studentsCount = Student::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1);
-//            })->count();
-//
-//            $orphanStudentsCount = Student::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1)
-//                    ->where('is_orphan', '1');
-//            })->count();
-//
-//            $unorphanStudentsCount = Student::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1)
-//                    ->where('is_orphan', '0');
-//            })->count();
-//
-//            //Teachers Statistics
-//            $teachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1);
-//            })->count();
-//
-//            $pendingTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 0);
-//            })->count();
-//
-//            $marriedTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1)
-//                    ->where('marital_status', 'married');
-//            })->count();
-//
-//            $singleTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1)
-//                    ->where('marital_status', 'single');
-//            })->count();
-//
-//
-//            $widowTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1)
-//                    ->where('marital_status', 'widow');
-//            })->count();
-//
-//
-//            //Admins Statistics
-//            $adminsCount = Admin::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1);
-//            })->count();
-//
-//            $marriedAdminsCount = Admin::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1)
-//                    ->where('marital_status', 'married');
-//            })->count();
-//
-//            $singleAdminsCount = Admin::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1)
-//                    ->where('marital_status', 'single');
-//            })->count();
-//
-//            $widowAdminsCount = Admin::whereHas('user', function ($query) use ($startDate, $endDate) {
-//                $query->whereBetween('created_at', [$startDate, $endDate])
-//                    ->where('is_approved', 1)
-//                    ->where('marital_status', 'widow');
-//            })->count();
-////            dd($adminsCount,$marriedAdminsCount,$singleAdminsCount,$widowAdminsCount);
-//
-//            $branchesCount = Branch::whereBetween('created_at', [$startDate, $endDate])->count();
-//            $propertiesCount = Property::whereBetween('created_at', [$startDate, $endDate])->count();
-//
-//            $classRoomsCount = ClassRoom::whereBetween('created_at', [$startDate, $endDate])
-//                ->where('is_approved', 1)->count();
-//
-//            $pendingClassRoomsCount = ClassRoom::whereBetween('created_at', [$startDate, $endDate])
-//                ->where('is_approved', 0)->count();
+                        $approvedUsersCount = User::where('is_approved', 1)
+                ->whereBetween('created_at', [$startDate, $endDate])
+                ->count();
+            $pendingUsersCount = User::where('is_approved', 0)
+                ->whereBetween('created_at', [$startDate, $endDate])
+                ->count();
+
+            $maleUsersCount = User::where('is_approved', 1)
+                ->whereBetween('created_at', [$startDate, $endDate])
+                ->whereIn('gender', ['male', 'ذكر'])
+                ->count();
+
+            $femaleUsersCount = User::where('is_approved', 1)
+                ->whereBetween('created_at', [$startDate, $endDate])
+                ->whereIn('gender', ['female', 'أنثى'])
+                ->count();
+
+            $activeUsersCount = User::where('is_approved', 1)
+                ->whereBetween('created_at', [$startDate, $endDate])
+                ->whereIn('status', ['active', 'فعال', '1'])
+                ->count();
+
+            $inactiveUsersCount = User::where('is_approved', 1)
+                ->whereBetween('created_at', [$startDate, $endDate])
+                ->whereIn('status', ['passive', 'غير فعال', '0'])
+                ->count();
+
+            $sickUsersCount = User::where('is_approved', 1)
+                ->whereBetween('created_at', [$startDate, $endDate])
+                ->whereIn('is_has_disease', ['yes', 'نعم', '1'])
+                ->count();
+
+            $unsickUsersCount = User::where('is_approved', 1)
+                ->whereBetween('created_at', [$startDate, $endDate])
+                ->whereIn('is_has_disease', ['no', 'لا', '0'])
+                ->count();
+
+            //Students Statistics
+
+            $studentsCount = Student::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1);
+            })->count();
+
+            $activeStudentsCount = Student::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('status', '1');
+            })->count();
+
+            $inactiveStudentsCount = Student::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('status', '0');
+            })->count();
+
+            $orphanStudentsCount = Student::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('is_orphan', '1');
+            })->count();
+
+            $unorphanStudentsCount = Student::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('is_orphan', '0');
+            })->count();
+
+            //Teachers Statistics
+            $teachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1);
+            })->count();
+
+            $activeTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('status', '1');
+            })->count();
+
+            $inactiveTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('status', '0');
+            })->count();
+
+            $pendingTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 0);
+            })->count();
+
+            $marriedTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('marital_status', 'married');
+            })->count();
+
+            $singleTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('marital_status', 'single');
+            })->count();
+
+
+            $widowTeachersCount = Teacher::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('marital_status', 'widow');
+            })->count();
+
+
+            //Admins Statistics
+            $adminsCount = Admin::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1);
+            })->count();
+
+            $marriedAdminsCount = Admin::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('marital_status', 'married');
+            })->count();
+
+            $singleAdminsCount = Admin::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('marital_status', 'single');
+            })->count();
+
+            $widowAdminsCount = Admin::whereHas('user', function ($query) use ($startDate, $endDate) {
+                $query->whereBetween('created_at', [$startDate, $endDate])
+                    ->where('is_approved', 1)
+                    ->where('marital_status', 'widow');
+            })->count();
+//            dd($adminsCount,$marriedAdminsCount,$singleAdminsCount,$widowAdminsCount);
+
+            $branchesCount = Branch::whereBetween('created_at', [$startDate, $endDate])->count();
+            $propertiesCount = Property::whereBetween('created_at', [$startDate, $endDate])->count();
+
+            $classRoomsCount = ClassRoom::whereBetween('created_at', [$startDate, $endDate])
+                ->where('is_approved', 1)->count();
+
+            $pendingClassRoomsCount = ClassRoom::whereBetween('created_at', [$startDate, $endDate])
+                ->where('is_approved', 0)->count();
 
             //properties Statistics
 
@@ -352,123 +375,7 @@ class AppAnalyticsRepository extends AnalyticsRepository implements IAppAnalytic
 
 
             // users Statistics
-            $approvedUsersCount = User::where('is_approved', 1)
-                ->count();
-            $pendingUsersCount = User::where('is_approved', 0)
-                ->count();
 
-            $maleUsersCount = User::where('is_approved', 1)
-                ->whereIn('gender', ['male', 'ذكر'])
-                ->count();
-
-            $femaleUsersCount = User::where('is_approved', 1)
-                ->whereIn('gender', ['female', 'أنثى'])
-                ->count();
-
-            $activeUsersCount = User::where('is_approved', 1)
-                ->whereIn('status', ['active', 'فعال', '1'])
-                ->count();
-
-            $inactiveUsersCount = User::where('is_approved', 1)
-                ->whereIn('status', ['passive', 'غير فعال', '0'])
-                ->count();
-
-            $sickUsersCount = User::where('is_approved', 1)
-                ->whereIn('is_has_disease', ['yes', 'نعم', '1'])
-                ->count();
-
-            $unsickUsersCount = User::where('is_approved', 1)
-                ->whereIn('is_has_disease', ['no', 'لا', '0'])
-                ->count();
-
-            //Students Statistics
-
-            $studentsCount = Student::whereHas('user', function ($query) {
-                $query->where('is_approved', 1);
-            })->count();
-
-            $activeStudentsCount = Student::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('status', '1');
-            })->count();
-
-            $inactiveStudentsCount = Student::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('status', '0');
-            })->count();
-
-            $orphanStudentsCount = Student::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('is_orphan', '1');
-            })->count();
-
-            $unorphanStudentsCount = Student::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('is_orphan', '0');
-            })->count();
-
-            //Teachers Statistics
-            $teachersCount = Teacher::whereHas('user', function ($query) {
-                $query->where('is_approved', 1);
-            })->count();
-
-            $pendingTeachersCount = Teacher::whereHas('user', function ($query) {
-                $query->where('is_approved', 0);
-            })->count();
-
-            $activeTeachersCount = Teacher::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('status', '1');
-            })->count();
-
-            $inactiveTeachersCount = Teacher::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('status', '0');
-            })->count();
-
-            $marriedTeachersCount = Teacher::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('marital_status', 'married');
-            })->count();
-
-            $singleTeachersCount = Teacher::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('marital_status', 'single');
-            })->count();
-
-
-            $widowTeachersCount = Teacher::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('marital_status', 'widow');
-            })->count();
-
-
-            //Admins Statistics
-            $adminsCount = Admin::whereHas('user', function ($query) {
-                $query->where('is_approved', 1);
-            })->count();
-
-            $marriedAdminsCount = Admin::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('marital_status', 'married');
-            })->count();
-
-            $singleAdminsCount = Admin::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('marital_status', 'single');
-            })->count();
-
-            $widowAdminsCount = Admin::whereHas('user', function ($query) {
-                $query->where('is_approved', 1)
-                    ->where('marital_status', 'widow');
-            })->count();
-
-            $branchesCount = Branch::count();
-            $propertiesCount = Property::count();
-
-            $classRoomsCount = ClassRoom::where('is_approved', 1)->count();
-
-            $pendingClassRoomsCount = ClassRoom::where('is_approved', 0)->count();
 
 
             $sessionsCount = Session::whereBetween('date', [$startDate, $endDate])->count();
@@ -581,16 +488,18 @@ class AppAnalyticsRepository extends AnalyticsRepository implements IAppAnalytic
                     'count' => $teachersCount,
                 ],
                 [
-                    'name' => 'All Pending Teachers',
-                    'count' => $pendingTeachersCount,
-                ],
-                [   'name' => 'All Active Teachers',
-                    'count' => $activeTeachersCount ,
+                    'name' => 'All Active Teachers',
+                    'count' => $activeTeachersCount,
                 ],
                 [
                     'name' => 'All Inactive Teachers',
-                    'count' => $inactiveTeachersCount ,
+                    'count' => $inactiveTeachersCount,
                 ],
+                [
+                    'name' => 'All Pending Teachers',
+                    'count' => $pendingTeachersCount,
+                ],
+
                 [
                     'name' => 'All Married Teachers',
                     'count' => $marriedTeachersCount,
@@ -708,8 +617,29 @@ class AppAnalyticsRepository extends AnalyticsRepository implements IAppAnalytic
 
     public function appGetTopLearners(string $timeFilter = 'all', Carbon $customStartDate = null, Carbon $customEndDate = null): object
     {
-        $startDate = '2000-01-01';
-        $endDate = now();
+        switch ($timeFilter) {
+            case 'week':
+                $startDate = now()->subWeek()->startOfDay();
+                $endDate = now();
+                break;
+            case 'month':
+                $startDate = now()->subMonth()->startOfDay();
+                $endDate = now();
+                break;
+            case 'custom':
+                if ($customStartDate && $customEndDate) {
+                    $startDate = $customStartDate->startOfDay();
+                    $endDate = $customEndDate->endOfDay();
+                } else {
+                    $startDate = '2000-01-01';
+                    $endDate = now();
+                }
+                break;
+            default:
+                $startDate = '2000-01-01';
+                $endDate = now();
+                break;
+        }
 
         $faceToFaceData = [];
         $absenceData = [];

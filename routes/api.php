@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+use App\Http\Controllers\Common\V1\ImageUploadController;
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/upload-image', [ImageUploadController::class, 'upload']);

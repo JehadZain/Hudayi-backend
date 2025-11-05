@@ -7,6 +7,8 @@ use App\Http\Requests\Mobile\V1\MobilePropertyCreateRequest;
 use App\Http\Requests\Mobile\V1\MobilePropertyEditRequest;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Intervention\Image\Facades\Image;
+
 
 class MobilePropertyController extends PropertyController
 {

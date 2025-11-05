@@ -36,6 +36,28 @@ class Handler extends ExceptionHandler
         'password_confirmation',
     ];
 
+    public function render($request, Throwable $e)
+    {
+        if ($request->expectsJson() || $request->is('api/*')) {
+            $response = [
+                'api' => 'FAILED',
+                'hints' => [$e->getMessage()],
+                'data' => null,
+            ];
+
+            if (config('app.debug')) {
+                $response['exception'] = get_class($e);
+                $response['trace'] = $e->getTrace();
+            }
+
+            $statusCode = method_exists($e, 'getStatusCode') ? $e->getStatusCode() : 500;
+
+            return response()->json($response, $statusCode);
+        }
+
+        return parent::render($request, $e);
+    }
+
     /**
      * Register the exception handling callbacks for the application.
      *

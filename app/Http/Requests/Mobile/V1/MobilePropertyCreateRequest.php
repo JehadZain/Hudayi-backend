@@ -24,18 +24,18 @@ class MobilePropertyCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => '',
-            'capacity' => '',
-            'branch_id' => '',
-            'description' => '',
-            'property_type' => '',
-            'email' => '',
-            'phone' => '',
-            'whatsapp' => '',
-            'facebook' => '',
-            'instagram' => '',
-            'location' => '',
-            'image' => '',
+            'name' => 'required|string|max:255',
+            'capacity' => 'required|integer',
+            'branch_id' => 'required|exists:branches,id',
+            'description' => 'nullable|string',
+            'property_type' => 'required|in:school,mosque',
+            'email' => 'nullable|email',
+            'phone' => 'nullable|string',
+            'whatsapp' => 'nullable|string',
+            'facebook' => 'nullable|string',
+            'instagram' => 'nullable|string',
+            'location' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
 
         ];
     }

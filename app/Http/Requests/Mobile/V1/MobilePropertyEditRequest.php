@@ -24,19 +24,19 @@ class MobilePropertyEditRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => '',
-            'capacity' => '',
-            'branch_id' => '',
-            'description' => '',
-            'property_type' => '',
-            'email' => '',
-            'phone' => '',
-            'whatsapp' => '',
-            'facebook' => '',
-            'instagram' => '',
-            'location' => '',
-            'image' => '',
+            'name' => 'sometimes|string|max:255',
+            'capacity' => 'sometimes|integer',
+            'branch_id' => 'sometimes|exists:branches,id',
+            'description' => 'nullable|string',
+            'property_type' => 'sometimes|in:school,mosque',
+            'email' => 'nullable|email',
+            'phone' => 'nullable|string',
+            'whatsapp' => 'nullable|string',
 
+            'facebook' => 'nullable|string',
+            'instagram' => 'nullable|string',
+            'location' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ];
     }
 }

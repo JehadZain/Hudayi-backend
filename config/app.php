@@ -165,7 +165,6 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         App\Providers\TelescopeServiceProvider::class,
         App\Providers\RepositoryServiceProvider::class,
-        Intervention\Image\ImageServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -194,7 +193,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // ...
+        'Image' => Intervention\Image\Facades\Image::class,
     ])->toArray(),
 
 ];
